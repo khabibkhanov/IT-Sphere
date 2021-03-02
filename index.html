@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Auto test</title>
+</head>
+
+<body>
+
+    <div class="modal">
+        <div class="modal__core">
+            <h1 id="modal-value">You win the GAME! Great!</h1>
+            <a href="index.html" class="home">Go Home</a>
+        </div>
+    </div>
+    <div class="section1 active">
+
+        <h1 class="mobile-title">AUTO TEST</h1>
+        <div class="banner">
+
+            <h4 class="banner__title">
+                LEVEL
+            </h4>
+            <select id="level-for-test" name="difficulty">
+                <option value="27 selected">Easy</option>
+                <option value="36" >Medium</option>
+                <option value="45">Hard</option>
+            </select>
+            <h4 class="banner__title">
+                Time
+            </h4>
+            <select id="time-for-test">
+                <option value="2" selected>2 minute</option>
+                <option value="5">5 minute</option>
+                <option value="7">7 minute</option>
+            </select>
+            <button id="start-btn">Start</button>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="quiz">
+            <div id="quiz__question" class="quiz__question">
+                <h2 class="question-space" id="question-space">
+
+                </h2>
+                <p id="time-table"></p>
+                <div class="audio-checker">🔉</div>
+            </div>
+            <div id="quiz__options" class="quiz__options">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-wrapper">
+        <audio class="audios" id="wrong-answer" src="audio/wrong-answer.mp3"></audio>
+        <audio class="audios" id="correct-answer" src="audio/correct-answer.mp3"></audio>
+        <audio class="audios" id="final-answer" src="audio/final.mp3"></audio>
+        <audio class="audios" id="winning" src="audio/winning.mp3"></audio>
+        <audio class="audios" id="main-theme" src="audio/main-theme.mp3"></audio>
+    </div>
+
+    <!-- <script src="libs/bootstrap/bootstrap.min.js"></script> -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
