@@ -166,7 +166,7 @@ let signsArr = [{
     },
     {
         id: 34,
-        title: `Pascal.png`,
+        title: `Pascal`,
         source: `../images/signs/pascal.jpeg`
     },
     {
