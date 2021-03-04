@@ -66,6 +66,10 @@ h1, h2, h3, h4, h5, h6, p, a{
             display: block;
             color: rgb(253, 253, 55);
             margin-bottom: -90px;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            padding: 5px 10px;
+            box-sizing: border-box;
             transition: all ease .3s;
             transform-origin: bottom;
 
@@ -77,6 +81,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 
             &:hover{
                 color: rgb(247, 247, 220);
+                border: 1px solid rgb(247, 247, 220);
             }
 
             &:active{
@@ -259,10 +264,10 @@ h1, h2, h3, h4, h5, h6, p, a{
             top: -50px;
             color: #fff;
             font-size: 26px;
-            border-top: 2px solid red;
-            border-bottom: 2px solid red;
+            border: 2px solid red;
             background-color: rgba(189, 189, 189, .8);
-            padding: 3px 0;  
+            padding: 5px;  
+            border-radius: 5px;
         }
 
         .audio-checker{

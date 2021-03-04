@@ -91,6 +91,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   display: block;
   color: #fdfd37;
   margin-bottom: -90px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
   -webkit-transform-origin: bottom;
@@ -105,6 +110,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .modal__core .home:hover {
   color: #f7f7dc;
+  border: 1px solid #f7f7dc;
 }
 
 .modal__core .home:active {
@@ -315,10 +321,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   top: -50px;
   color: #fff;
   font-size: 26px;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
+  border: 2px solid red;
   background-color: rgba(189, 189, 189, 0.8);
-  padding: 3px 0;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .quiz__question .audio-checker {
