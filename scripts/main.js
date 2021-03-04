@@ -250,6 +250,7 @@ let timeForTest = document.querySelector('#time-for-test');
 // savol maydonchasi
 let questionSpace = document.querySelector('#question-space');
 let modal = document.querySelector('.modal');
+const restartButton = document.querySelector('.home');
 // sahifa yuklangandagi ilk bajariladagan holat va funksiyalar bu -
 // window.addEventListener('load', () => {
 //     aTagsCreator(levelForTest.value);
@@ -304,7 +305,8 @@ function aTagsCreator(processLength) {
                 if (selectedArr.length == 0) {
                     timingFunction(0);
                     modal.classList.add('active');
-                    modalValue.textContent = 'You win the GAME! Great!';
+                    modalValue.textContent = 'Congratulation!!! You win the GAME! Great!';
+                    restartButton.textContent = 'Game Again!!!'
                 }
 
                 let randomNumberTitle = getRandomInt(selectedArr.length);
